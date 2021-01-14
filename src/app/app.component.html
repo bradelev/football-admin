@@ -1,1 +1,13 @@
-<router-outlet></router-outlet>
+<!-- MENU: This Menu will be an independent component -->
+
+<nav class="navbar is-light">
+  <div class="navbar-menu">
+    <a routerLink="/players" class="navbar-item">Players</a>
+    <a routerLink="/clubs" class="navbar-item">Clubs</a>
+  </div>
+</nav>
+
+<!-- END MENU -->
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

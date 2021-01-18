@@ -3,13 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { ClubsRoutingModule } from './clubs-routing.module';
 import { ClubsComponent } from './clubs.component';
+import { ClubDetailsComponent } from './club-details/club-details.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [ClubsComponent],
+  declarations: [ClubsComponent, ClubDetailsComponent],
   imports: [
     CommonModule,
-    ClubsRoutingModule
+    ReactiveFormsModule,
+    ClubsRoutingModule,
   ]
 })
 export class ClubsModule { }

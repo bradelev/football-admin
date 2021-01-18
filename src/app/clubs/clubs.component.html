@@ -1,1 +1,11 @@
-<p>clubs works!</p>
+<nav class="navbar">
+  <div class="navbar-menu">
+    <a routerLink="create" class="navbar-item">Create</a>
+  </div>
+</nav>
+<div class="container">
+  <h1 class="title">Clubs list</h1>
+  <ul>
+    <li *ngFor="let club of clubs">{{ club | json }}</li>
+  </ul>
+</div>

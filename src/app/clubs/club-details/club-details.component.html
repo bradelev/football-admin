@@ -1,0 +1,62 @@
+<div class="container">
+  <h1 class="title">Create Club</h1>
+  <form [formGroup]="clubForm">
+
+    <div class="field">
+      <label for="" class="label">Name</label>
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <input type="text" formControlName="name">
+          </div>
+          <p class="help is-danger" *ngIf="name.invalid && (name.dirty || name.touched) && name.errors.required">Required field</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="" class="label">Country</label>
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <input type="text" formControlName="country">
+          </div>
+          <p class="help is-danger" *ngIf="country.invalid && (country.dirty || country.touched) && country.errors.required">Required field</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="" class="label">Reputation</label>
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <input type="text" formControlName="reputation">
+            <p class="help is-danger" *ngIf="reputation.invalid && (reputation.dirty || reputation.touched) && reputation.errors.required">Required field</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="" class="label">Economy</label>
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <input type="text" formControlName="economy">
+            <p class="help is-danger" *ngIf="economy.invalid && (economy.dirty || economy.touched) && economy.errors.required">Required field</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="control">
+        <button class="button is-primary" (click)="submitForm()">
+          Create Club
+        </button>
+      </div>
+    </div>
+
+  </form>
+</div>
